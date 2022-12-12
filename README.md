@@ -17,3 +17,16 @@ I've decided to pause and think about:
 
 When I have decided what that is I'll return with another update.
 
+### Tuesday 13th December 2022:
+
+The project I've decided to go by is creating a digital command board for a household.
+
+This helps those living together to work towards goals, stay organised and keep everyone up to date with each member's schedule.
+
+After living in a few share housing situations and then being trapped inside isolation whilst having covid - It was difficult to ask for help with a sore throat and those who are immune compromised had to wait until they got home to find out that they may need to take extra precautions.
+
+With my app idea I hope to make the line of communication more transparent, considerate and useful for those living together.
+
+At first I was going to avoid using APIs all together because I genuinely find them to be my personal weakness. However, if I avoid the things I struggle with - How can I ever hope to improve and master that weakness? 
+
+That being said - I've decided to challenge myself with using a [Google Calendar API:](https://developers.google.com/calendar)
