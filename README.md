@@ -17,7 +17,9 @@ I've decided to pause and think about:
 
 When I have decided what that is I'll return with another update.
 
-### Tuesday 13th December 2022 :
+### Tuesday 13th December 2022:
+
+Update 1: 
 
 The project I've decided to go by is creating a digital command board for a household.
 
@@ -30,3 +32,30 @@ With my app idea I hope to make the line of communication more transparent, cons
 At first I was going to avoid using APIs all together because I genuinely find them to be my personal weakness. However, if I avoid the things I struggle with - How can I ever hope to improve and master that weakness? 
 
 That being said - I've decided to challenge myself with using a [Google Calendar API:](https://developers.google.com/calendar)
+
+Update 2: 
+
+I have finally managed to link this repository to my local terminal.
+
+Now that I know what I want to make and what tools I want to use lets get to planning, wireframing and hopefully get started on some coding today :heart: 
+
+Here is my current list for what I like to call my tool kit:
+
+**Planning this project:**
+- Pen and paper
+- Figma
+- Canva
+
+**Creating this project:**
+- Sinatra
+- PostgreSQL
+- Ruby
+- HTML
+- CSS
+
+Some progress images:
+	
+![1](https://user-images.githubusercontent.com/116997107/207234618-55156e49-d86b-4988-8739-8f41ed562711.png)
+![2](https://user-images.githubusercontent.com/116997107/207234652-c66b143a-8a57-4c00-a4bb-f1d44dcbbdc5.png)
+![Login_Sign Up](https://user-images.githubusercontent.com/116997107/207234667-676f4252-a32e-41a0-bddc-fc078d7d3c83.png)
+![Login_Sign Up (2)](https://user-images.githubusercontent.com/116997107/207234677-7d7ad59e-5687-4edf-ade4-d501a6fb3e86.png)
