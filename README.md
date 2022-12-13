@@ -21,7 +21,7 @@ When I have decided what that is I'll return with another update.
 
 Update 1: 
 
-The project I've decided to go by is creating a digital command board for a household.
+The project I've decided to go with creating a digital command board for a household.
 
 This helps those living together to work towards goals, stay organised and keep everyone up to date with each member's schedule.
 
@@ -59,3 +59,17 @@ Some progress images:
 ![2](https://user-images.githubusercontent.com/116997107/207234652-c66b143a-8a57-4c00-a4bb-f1d44dcbbdc5.png)
 ![Login_Sign Up](https://user-images.githubusercontent.com/116997107/207234667-676f4252-a32e-41a0-bddc-fc078d7d3c83.png)
 ![Login_Sign Up (2)](https://user-images.githubusercontent.com/116997107/207234677-7d7ad59e-5687-4edf-ade4-d501a6fb3e86.png)
+Disclaimer: The final product may end up being completely different to my initial ideas and vision.
+
+### Wednesday 14th December 2022:
+![Screenshot 2022-12-13 at 3 59 23 pm](https://user-images.githubusercontent.com/116997107/207442147-f214ffe7-ac1b-4309-9916-96e0712a9ea9.png)
+Trello board that we were asked to provide to the teacher - It become immediately apparent that I use it very differently to the other students.:sweat_smile:
+
+Update 1: 
+
+Coding files is up and running.
+
+I have my first webpage working, small wins yay.:notes:
+
+Today's goal is to hit MVP!
+
