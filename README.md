@@ -17,7 +17,7 @@ I've decided to pause and think about:
 
 When I have decided what that is I'll return with another update.
 
-### Tuesday 13th December 2022:
+### Tuesday 13th December 2022 :
 
 The project I've decided to go by is creating a digital command board for a household.
 
