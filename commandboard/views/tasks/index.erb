@@ -1,13 +1,23 @@
 <h1>Command Board</h1>
+<a href="/users/new">Sign Up</a>
 <a href="/tasks/new">Add New Task</a>
 
 <section class="tasks">
   <% tasks.each do |task| %>
     <section class="task">
+    
       <header>
         <h2><%= task['task_name'] %></h2>
-        <p><%= task['task_instructions'] %></p>
-        <p><%= task['assign_task_to'] %></p>
+
+        <section class="controls">
+          <a href="/tasks/<%= task['id'] %>/edit">Edit</a>
+
+          <form action="/tasks/<%= task['id'] %>" method="POST">
+            <input type="hidden" name="_method" value="delete">
+            <button>Delete</button>
+          </form>
+        </section>
+
       </header>
     </section>
   <% end %>

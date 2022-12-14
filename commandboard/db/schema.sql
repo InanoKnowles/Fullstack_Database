@@ -33,6 +33,11 @@ CREATE TABLE users(
   id SERIAL PRIMARY KEY,
   first_name TEXT,
   last_name TEXT,
-  dob INTEGER,
-  image_url TEXT
+  email TEXT
 );
+--Don't need these values to start off with I just wanted to play with this
+INSERT INTO users(first_name, last_name, email)
+VALUES
+  ('Daisy', 'Doo', 'dd@me.com'),
+  ('Mario', 'OldBro', 'smash.com'),
+  ('Luigi', 'LilBro', 'squish.com');
