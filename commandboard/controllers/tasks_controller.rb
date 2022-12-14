@@ -7,14 +7,16 @@ get '/' do
 end
 
 get '/tasks/new' do
- 
+
   if !logged_in?
     redirect '/'
   end
+
   erb :'tasks/new'
 end
 
 post '/tasks' do
+
   if !logged_in?
     redirect '/'
   end
@@ -28,35 +30,51 @@ post '/tasks' do
 end
 
 get '/tasks/:id/edit' do
+
   if !logged_in?
     redirect '/'
   end
+
   id = params['id']
+ 
   task = get_task(id)
+
   erb :'tasks/edit', locals: {
     task: task
   }
 end
 
 put '/tasks/:id' do
+
   if !logged_in?
     redirect '/'
   end
-
 
   id = params['id']
   task_name = params['task_name']
   task_instructions = params['task_instructions']
   assign_task_to = params['assign_task_to']
+
   update_task(id, task_name, task_instructions, assign_task_to)
   redirect '/'
 end
 
 delete '/tasks/:id' do
+
   if !logged_in?
     redirect '/'
   end
+
   id = params['id']
+
   delete_task(id)
+  redirect '/'
+end
+
+post '/tasks/:id/likes' do
+  task_id = params['id']
+  user_id = session['user_id']
+
+  run_sql("INSERT INTO likes(user_id, task_id) VALUES($1, $2)", [user_id, task_id])
   redirect '/'
 end

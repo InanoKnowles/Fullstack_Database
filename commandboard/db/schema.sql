@@ -45,3 +45,13 @@ VALUES
 ALTER TABLE users ADD COLUMN password_digest TEXT;
 
 SELECT * FROM users;
+
+CREATE TABLE likes(
+  id SERIAL PRIMARY KEY,
+  user_id INTEGER,
+  food_id INTEGER
+);
+
+ALTER TABLE likes
+ADD CONSTRAINT unique_likes
+UNIQUE(user_id, task_id);

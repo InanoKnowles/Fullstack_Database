@@ -28,9 +28,13 @@
             <form action="/tasks/<%= task['id'] %>" method="POST">
               <input type="hidden" name="_method" value="delete">
               <button>Delete</button>
+               <form action="/tasks/<%= task['id'] %>/likes" method="POST">
+            <button>Like</button>
+          </form>
             </form>
           </section>
           
+         
         </header>
       </section>
     <% end %>
