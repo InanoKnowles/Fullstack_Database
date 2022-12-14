@@ -1,0 +1,14 @@
+<h1>Command Board</h1>
+<a href="/tasks/new">Add New Task</a>
+
+<section class="tasks">
+  <% tasks.each do |task| %>
+    <section class="task">
+      <header>
+        <h2><%= task['task_name'] %></h2>
+        <p><%= task['task_instructions'] %></p>
+        <p><%= task['assign_task_to'] %></p>
+      </header>
+    </section>
+  <% end %>
+</section>
