@@ -41,3 +41,7 @@ VALUES
   ('Daisy', 'Doo', 'dd@me.com'),
   ('Mario', 'OldBro', 'smash.com'),
   ('Luigi', 'LilBro', 'squish.com');
+
+ALTER TABLE users ADD COLUMN password_digest TEXT;
+
+SELECT * FROM users;
