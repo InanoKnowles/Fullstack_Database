@@ -1,3 +1,5 @@
+-- Thu 15 DEC 5:33PM -----> My terminal stopped working and wouldn't let me push to git hub
+
 CREATE DATABASE command_board_db;
 \c command_board_db
 
@@ -46,12 +48,12 @@ ALTER TABLE users ADD COLUMN password_digest TEXT;
 
 SELECT * FROM users;
 
-CREATE TABLE likes(
+CREATE TABLE done(
   id SERIAL PRIMARY KEY,
   user_id INTEGER,
-  food_id INTEGER
+  task_id INTEGER
 );
 
-ALTER TABLE likes
-ADD CONSTRAINT unique_likes
+ALTER TABLE done
+ADD CONSTRAINT unique_done
 UNIQUE(user_id, task_id);

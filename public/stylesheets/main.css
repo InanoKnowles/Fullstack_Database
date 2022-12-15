@@ -1,0 +1,97 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url("https://images.unsplash.com/photo-1550895030-823330fc2551?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    max-width:900px;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 1.5rem;
+  }
+  
+  .tasks {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(521px, 0fr));
+    gap: 1.30rem;
+    margin: 51px 221px 22px 177px;
+  }
+  
+  .button_out {
+    text-align: center;
+    padding: 17rem;
+    margin: 5rem;
+  }
+
+  a,
+  button {
+    border: 1px solid black;
+    padding: 7px 8px 7.1px 9px;
+    background-color: rgb(104, 125, 168);
+    color: white;
+    font-size: 0.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    margin: 3px 0px 9px 2px;
+  }
+  
+  .task header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+    background-color: rgb(203, 223, 223);
+  }
+  
+  .task h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 0.5rem;
+    text-align: center;
+    margin: 3px 6px -11px;
+    padding: 1px;
+  }
+
+.instructions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.assign_style {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 305px 5px 5px;
+  background-color: rgb(203, 223, 223);
+}
+
+.format_login {
+  text-align: center;
+}
+
+.format_word {
+  margin: 1px 10px -5px 10px;
+  padding: 1px;
+}
+
+.instructions p {
+  margin: 12px 1px 12px 0px;
+}

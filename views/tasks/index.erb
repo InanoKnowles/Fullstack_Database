@@ -1,0 +1,53 @@
+<h1>To Do List</h1>
+
+<% if logged_in? %>
+  <h2>Welcome <%= current_user['first_name'] %></h2>
+  
+  <section class="controls">
+    <form action="/sessions" method="POST">
+      <input type="hidden" name="_method" value="delete">
+   <span class="button_out">   <button>Log out</button>
+    </form>
+   <a href="/tasks/new">Add Task Item</a></span>
+  </section>
+
+  <section class="tasks">
+    <% tasks.each do |task| %>
+      <section class="task">
+        <header>
+          <h2><%= task['task_name'] %></h2>
+
+              <section class="controls">
+                <a href="/tasks/<%= task['id'] %>/edit">Edit</a>
+
+                  <form action="/tasks/<%= task['id'] %>" method="POST">
+                    <input type="hidden" name="_method" value="delete">
+                    <button>Delete</button>
+                  </form>
+
+              <form action="/tasks/<%= task['id'] %>/done" method="POST">
+              <button>DONE</button>
+              </form>
+        </section>
+        </header>
+
+            <section class="instructions">
+              <p><%= task['task_instructions'] %></p>
+            </section>
+
+              <section class="assign_style">
+              <span class="format_word">  <h4>Assigned to:</h4></span>
+              <h3><%= task['assign_task_to'] %></h3>
+              </section>
+       
+   </section>
+
+      
+    <% end %>
+  </section>
+<% else %>
+  <section class="format_login">
+    <a href="/users/new">Sign Up</a>
+    <a href="/sessions/new">Log In</a>
+  </section>
+<% end %>

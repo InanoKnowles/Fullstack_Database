@@ -17,3 +17,5 @@ def all_tasks
   def delete_task(id)
     run_sql('DELETE FROM tasks WHERE id = $1', [id])
   end
+
+  

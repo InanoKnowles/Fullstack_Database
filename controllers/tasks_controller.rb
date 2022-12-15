@@ -12,7 +12,11 @@ get '/tasks/new' do
     redirect '/'
   end
 
-  erb :'tasks/new'
+  all_users = find_all_users()
+
+   erb :'tasks/new', locals: {
+    all_users: all_users
+  }
 end
 
 post '/tasks' do
@@ -37,7 +41,7 @@ get '/tasks/:id/edit' do
 
   id = params['id']
  
-  task = get_task(id)
+  task = find_assignee()
 
   erb :'tasks/edit', locals: {
     task: task
@@ -55,6 +59,7 @@ put '/tasks/:id' do
   task_instructions = params['task_instructions']
   assign_task_to = params['assign_task_to']
 
+
   update_task(id, task_name, task_instructions, assign_task_to)
   redirect '/'
 end
@@ -71,10 +76,10 @@ delete '/tasks/:id' do
   redirect '/'
 end
 
-post '/tasks/:id/likes' do
+post '/tasks/:id/done' do
   task_id = params['id']
   user_id = session['user_id']
 
-  run_sql("INSERT INTO likes(user_id, task_id) VALUES($1, $2)", [user_id, task_id])
+  run_sql("INSERT INTO done(user_id, task_id) VALUES($1, $2)", [user_id, task_id])
   redirect '/'
 end

@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "dev": "nodemon -r dotenv/config server.js",
-    "dotenv": "^16.0.3"
-  }
-}

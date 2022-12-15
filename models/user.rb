@@ -7,7 +7,6 @@ end
 def find_user_by_email(email)
   users = run_sql('SELECT * FROM users WHERE email = $1', [email])
 
-  # if more than one user is found with that email address, pick the first one with that email. Otherwise if no one is found, return nil.
   if users.to_a.count > 0
     users[0]
   else
@@ -17,4 +16,8 @@ end
 
 def find_user_by_id(id)
   run_sql('SELECT * FROM users WHERE id = $1', [id])[0]
+end
+
+def find_all_users()
+  run_sql('SELECT * FROM users ORDER BY id')
 end
