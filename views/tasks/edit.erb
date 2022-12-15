@@ -10,7 +10,20 @@
   <input type="text" name="task_instructions" value="<%= task['task_instructions'] %>">
 
   <label for="">Assign Task To: </label>
-  <input type="text" name="assign_task_to" value="<%= task['assign_task_to'] %>">
+ 
 
-  <button>Update Task</button>
-</form>
+
+
+<label for="">Assign to user:</label>
+     <select name="assign_task_to">
+         <% all_users.each do |user| %>
+        
+          <option <%= task['assign_task_to'] == user['first_name'] ? selected="selected" : "" %>  value="<%= user['first_name'] %>"><%= user['first_name'] %></option>
+      
+        <% end %>
+
+      </select>
+        <input type="hidden" value="assign_task_to" >
+
+    <button>Update Task</button>
+</form>           

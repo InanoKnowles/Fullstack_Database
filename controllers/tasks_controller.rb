@@ -40,11 +40,12 @@ get '/tasks/:id/edit' do
   end
 
   id = params['id']
- 
-  task = find_assignee()
+  all_users = find_all_users()
+  task = get_task(id)
 
   erb :'tasks/edit', locals: {
-    task: task
+    task: task,
+    all_users: all_users
   }
 end
 
