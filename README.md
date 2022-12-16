@@ -1,7 +1,54 @@
 # Full Stack Database
 My second project with General Assembly is to create a database on any topic that I choose.
 
+Feel free to go through my UPDATES section to follow my learnings whilst working on this project.
+
+## About
+
+My project is a basic to do list
+- Main feature: Allows you to assign individual tasks to different users and edit.
+
+## :pencil2: Planning & Problem Solving
+
+I originally planned for it to have a lot of features for organising households but as I got deeper into the project, I realised there are a lot of things I need to work on to become a better software designer.
+I'm excited to continue this project in the future. I'm in love with the challenges that give me learning opportunities.
+
+## :rocket: Cool tech
+
+**Planning this project:**
+- Pen and paper
+- Figma
+- Canva
+
+**Creating this project:**
+- Sinatra
+- PostgreSQL
+- Ruby
+- HTML
+- CSS
+
+## :scream: Bugs to fix :poop:
+
+- When you click on DONE for the 2nd time we get a unicode error
+- I recently fixed the sign up bug where I was giving 3 arguments instead of 4 that were expected
+- Deployment issues on fly.io
+
+## :sob: Lessons learnt
+
+- Plan and do projects at YOUR CURRENT level NOT your future selfs level
+- Avoid forcefully pushing up to GitHub
+- Push up often and as soon as the first error appears get help ASAP 
+- Ask lots of questions but be extra specific
+
+## :white_check_mark: Future Features
+
+- Adding more command centre features to my app and make it responsive
+- Adding API's 
+- Make my site look more clean and uncluttered
+- I would love to make a theme on it
+
 ## Updates:
+
 ### Monday 12th December 2022:
 
 The project was handed out today - We were asked to prepare a 30 second pitch for tomorrow.
@@ -104,6 +151,12 @@ But I just keep getting this:
 
 I've tried creating section classes to isolate the elements that I want to play with, I've tried grouping them all together and I've tried putting them into different files - Obviously none of those work. Is the cheeky bugger hiding inside the CSS?
 
-OH YEAH! Whilst I remember:
+### Friday 16th December 2022:
 
-:tada: MVP is officially hit :tada:
+I tried to deploy to fly.io and in following the instructions a bit TOO closely I went and made new .git file/repository inside my current repository. Pushed my code up with -f RAGEEEEE!
+
+And now my sign up botton is being an egg. 
+
+On the bright side my css is doing what I wanted now yay for small wins.
+
+
