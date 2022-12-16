@@ -1,7 +1,14 @@
 # Full Stack Database
 My second project with General Assembly is to create a database on any topic that I choose.
 
+:link: https://commandboard.fly.dev/ :link:
+
+This is the link to the website - Don't get excited its not working.
+
+I followed the instructions and then had someone do every step with me to make sure it wasn't a nano error.
+
 Feel free to go through my UPDATES section to follow my learnings whilst working on this project.
+
 
 ## About
 
